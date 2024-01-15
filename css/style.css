@@ -20,8 +20,8 @@ a {
 .header {
 	padding: 20px;
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 .header__logo-text {
 	color: #ad190c;
@@ -47,7 +47,7 @@ a {
 	right: -17px;
 	width: 15px;
 	height: 15px;
-	background: url('/img/down.svg');
+	background: url('../img/down.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: .2s ease;
@@ -65,7 +65,7 @@ a {
 	width: 15px;
 	height: 15px;
 	transform:  rotate(90deg);
-	background: url('/img/down.svg');
+	background: url('../img/down.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: .2s ease;
@@ -109,7 +109,7 @@ a {
 	margin-top: 50px;
 	width: 100%;
 	height: 520px;
-	background: url('img/Opera Снимок_2024-01-15_110600_www.alue.co.jp.png');
+	background: url('../img/Opera Снимок_2024-01-15_110600_www.alue.co.jp.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -160,7 +160,7 @@ a {
 	margin-top: 120px;
 	width: 100%;
 	height: 520px;
-	background: url('img/fon_tema.png');
+	background: url('../img/fon_tema.png');
 	background-repeat: no-repeat;
 }
 .tima__conteiner {
