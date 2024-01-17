@@ -542,3 +542,19 @@ a {
    font-weight: 600;
    
 }
+.addquestions {
+	padding: 50px;
+	text-align: center;
+}
+.addquestions__title {
+	color:  #ad190c;
+	font-size: 36px;
+	text-align: center;
+	
+}
+.addquestions__nomer {
+	font-size: 32px;
+	font-weight: bold;
+
+}
+
