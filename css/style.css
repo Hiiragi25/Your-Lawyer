@@ -557,4 +557,116 @@ a {
 	font-weight: bold;
 
 }
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10002;
+	background-color: #3333;
+	transform: scale(0);
+	visibility: hidden;
+	transition:  all 0.2s linear;
+}
+.modal--open {
+	overflow: scroll;
+	transition:  all 0.2s linear;
+	visibility: visible;
+	transform: scale(1)
+}
+.modal__form_authorization{
+	transition:  all 0.2s linear;
+}
+.modal__form_authorization--active {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform:  translateX(500px);
+	transition:  all 0.2s linear;
+}
+
+.modal__form_registration{
+	position: relative;
+	transition:  all 0.2s linear;
+	transform:  translateX(0);
+}
+.modal__form_registration--active{
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform:  translateX(500px);
+	transition:  all 0.2s linear;
+}
+
+.modal__conteiner {
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	max-width: 360px;
+	background: #fff;
+	padding: 20px  10px; 
+	transform: translate(-50%,-50%);  
+	overflow:hidden;
+	padding: 20px;
+}
+.modal__conteiner .bx {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 20px;
+	cursor: pointer;
+}
+.modal__title {
+	text-align: center;
+	padding: 12px 0;
+	color: #ad190c;
+
+
+}
+.form__conteiner{
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+}
+.form__item {
+	display: flex;
+	flex-direction: column;
+
+}
+.form__item_input {
+	padding: 10px;
+	outline: none;
+	border: 1px solid var(--modal-form-item-input-solid);
+	width: 100%;
+}
+.form__item_erorr {
+
+	font-size: clamp(12px, 0.652rem + 0.49vw, 16px);
+	color: var(--modal-form-item-error-color);
+}
+
+.form__item_btn {
+	padding: 10px 20px;
+	background-color: #ad190c;
+	border: 1px solid #ad190c;
+	color: #fff;
+	border-radius: 8px;
+	transition: background-color .2s ease-in; 
+	cursor: pointer;
+	font-size: clamp(12px, 0.652rem + 0.49vw, 16px) ;
+}
+.form__item_btn:hover{
+	transition: background-color .3s ease-in; 
+	background-color: var( --header-btn-bg-hover);
+	color: var(--modal-form-item-btn-color-hover);	
+	border: 1px solid #000;
+}
+.authorization__btn,.registration__btn {
+	display: block;
+	margin-top: 10px;
+	font-size: clamp(12px, 0.652rem + 0.49vw, 16px);
+	text-align: center;
+}
 
