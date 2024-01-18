@@ -233,16 +233,14 @@ Version: 0.0.1-NR
               	<div class="contact__form">
               		 <div class="contact__title">
              	  <h2 class="contact__title-text">リクエストを残してください</h2>
-             	  <p class="contact__title-subtitle"><リクエストを残してください。折り返しご連絡させていただきます</p>
+             	  <p class="contact__title-subtitle">リクエストを残してください。折り返しご連絡させていただきます</p>
              </div>
 		 	  	  <form>
 		 	  	  	 <div class="contact__item">
-		 	  	  	 	 <input class="contact__input" type="text"  required>
-		 	  	  	 	 <label class="contact__label">氏名</label>
+		 	  	  	 	 <input class="contact__input" type="text" placeholder="氏名" required>
 		 	  	  	 </div>
 		 	  	  	  <div class="contact__item">
-		 	  	  	  <input class="contact__input" type="text"  required >
-		 	  	  	  <label class="contact__label">電話</label>
+		 	  	  	  <input class="contact__input" type="text" placeholder="電話" required >
 		 	  	  	  </div>
 		 	  	  	 <div>
 		 	  	  	 		  <input class="contact__button" type="submit" value="送信"><br>
@@ -268,11 +266,13 @@ Version: 0.0.1-NR
 			<h2 class="modal__title">申請書を提出する</h2>
 			<div class="form__conteiner">
 				<div class="form__item">
-					<input class="form__item_input" type="text" name="login" required placeholder="氏名">
+					<input class="form__item_input" type="text" name="login" required >
+					 <label class="form__label">氏名</label>
 					<span  class="form__item_erorr form__item_erorr--login"></span>
 				</div>
 				<div class="form__item">
-					<input class="form__item_input" type="password" name="password"  placeholder="電話番号">
+					<input class="form__item_input" type="password" name="password" required  >
+					<label class="form__label">電話番号</label>
 					<span  class="form__item_erorr form__item_erorr--password"></span>
 				</div>
 				<input class="form__item_btn" name="authorization" type="submit" value="送信">
@@ -280,12 +280,6 @@ Version: 0.0.1-NR
 		</form>
 	  </div>
 		</section>
-		<section class="addquestions">
-		 <div class="addquestions__conteiner">
-		 	  <h2 class="addquestions__title">ご質問がございましたら、お電話ください</h2>
-		 	  <p class="addquestions__nomer">+543-434-545-34</p>
-		 </div>
-	</section>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
