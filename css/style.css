@@ -12,6 +12,22 @@ a {
 	text-decoration: none;
 	color: #ad190c;
 }
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+html::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+    
+html::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+    background-color: #ad190c;
+   
+}
 .conteiner {
 	max-width: 1440px;
 	margin: 0 auto;
