@@ -521,27 +521,7 @@ a {
 	cursor: pointer;
 	border: 1px solid #fff;
 }
-.contact__item {
-	position: relative;
-}
 
-.contact__label {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 15px;
-	color: #000;
-	pointer-events: none;
-	transition: 0.2s ease;
-}
-.contact__input:is(:focus, :valid) ~ .contact__label {
-   transform: translateY(-150%);
-   color: #2E8B57;
-   font-size: 20px;
-   color: #fff;
-   font-weight: 600;
-   
-}
 .addquestions {
 	padding: 50px;
 	text-align: center;
@@ -563,18 +543,23 @@ a {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 10002;
-	background-color: #3333;
+	z-index: 60;
+	background-color: #0000;
 	transform: scale(0);
 	visibility: hidden;
 	transition:  all 0.2s linear;
+
+
 }
 .modal--open {
-	overflow: scroll;
+    opacity: 1;
 	transition:  all 0.2s linear;
 	visibility: visible;
-	transform: scale(1)
+	transform: scale(1);
+	
+
 }
+
 .modal__form_authorization{
 	transition:  all 0.2s linear;
 }
@@ -628,7 +613,8 @@ a {
 .form__conteiner{
 	display: flex;
 	flex-direction: column;
-	gap:10px;
+	padding: 20px;
+	gap:20px;
 }
 .form__item {
 	display: flex;
@@ -636,11 +622,37 @@ a {
 
 }
 .form__item_input {
-	padding: 10px;
 	outline: none;
+	padding: 16px 0;
 	border: 1px solid var(--modal-form-item-input-solid);
 	width: 100%;
 }
+
+.form__item{
+	position: relative;
+}
+
+.form__label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	color: #000;
+	pointer-events: none;
+	transition: 0.2s ease;
+}
+.form__item_input:is(:focus, :valid) ~ .form__label {
+   transform: translateY(-120%);
+   color: #ad190c;
+   font-size: 20px;
+   font-weight: 600;
+   
+}
+.form__item_input:focus {
+     border-bottom: 1px solid #ad190c;
+}
+
+
 .form__item_erorr {
 
 	font-size: clamp(12px, 0.652rem + 0.49vw, 16px);
